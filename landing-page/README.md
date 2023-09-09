@@ -34,13 +34,13 @@ This is a Responsive Landing Page for CODSOFT Internship. Healthy Meal Delivery 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/healthy-meal-delivery.git
+   git clone https://github.com/aviralsharma07/CODSOFT.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd healthy-meal-delivery
+   cd landing-page
    ```
 
 3. Open the project in your code editor.
