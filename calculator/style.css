@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #f2f2f2, #cbcbcb);
+  font-family: sans-serif;
 }
 
 /*! ############ STYLING CALCULATOR ############ !*/
@@ -25,10 +26,12 @@ body {
 .calculator-screen {
   width: 25rem;
   text-align: right;
-  padding: 0.5rem 0.75rem;
-  font-size: 2.5rem;
-  color: rgba(119, 136, 153, 0.75);
+  padding: 0.75rem 1rem;
+  font-size: 2rem;
+  /* color: rgb(0, 0, 0, 0.55); */
+  color: #fff;
   font-weight: 300;
+  background: rgb(0, 0, 36);
 }
 
 .calculator-keys {
@@ -54,7 +57,7 @@ body {
   background-color: rgba(119, 136, 153, 0.75);
 }
 
-.operator {
+[data-type="operator"] {
   color: orangered;
   font-weight: 700;
 }
