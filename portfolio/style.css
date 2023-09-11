@@ -69,7 +69,8 @@ nav ul li:last-child a {
 
 .introduction {
   /* border: 2px solid blue; */
-  height: 80vh;
+  max-height: 80vh;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +119,7 @@ nav ul li:last-child a {
 
 .about {
   /* border: 2px solid green; */
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,8 +166,8 @@ nav ul li:last-child a {
 /*! ############ STYLING SKILLS SECTION ############ !*/
 
 .skills {
-  /* border: 2px solid yellow; */
-  height: 70vh;
+  /* border: 2px solid rgb(17, 16, 16); */
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,6 +177,7 @@ nav ul li:last-child a {
 .skills h2 {
   font-size: 3rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .skill-container {
@@ -227,7 +229,7 @@ nav ul li:last-child a {
 
 .projects {
   /* border: 2px solid blue; */
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,6 +239,7 @@ nav ul li:last-child a {
 .projects h2 {
   font-size: 3rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .projects-container {
@@ -298,7 +301,7 @@ nav ul li:last-child a {
 
 .resume {
   /* border: 2px solid green; */
-  height: 40vh;
+  max-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -331,7 +334,7 @@ nav ul li:last-child a {
 
 .contact {
   /* border: 2px solid purple; */
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -399,7 +402,7 @@ textarea:focus {
 footer {
   margin-top: 2rem;
   border-top: 0.5px solid #333;
-  height: 40vh;
+  max-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,4 +450,239 @@ footer {
 p,
 h3 {
   color: #333;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 10vh;
+    padding: 0 2.25rem;
+    position: relative;
+  }
+
+  .hamburger {
+    /* border: 1px solid crimson; */
+    position: absolute;
+    right: 2.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .line {
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 0rem;
+    right: -300px;
+    z-index: 2;
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 0 0 0 10px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  nav ul {
+    /* border: 2px solid green; */
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  /*! ############ RESPONSIVE INTRODUCTION SECTION ############ !*/
+
+  .introduction {
+    padding: 2rem 0;
+  }
+
+  .introduction h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .introduction p {
+    font-size: 1rem;
+    text-wrap: wrap;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .introduction button {
+    padding: 1rem 1.5rem;
+  }
+
+  .introduction button a {
+    font-size: 1rem;
+  }
+
+  /*! ############ RESPONSIVE ABOUT SECTION ############ !*/
+
+  .about {
+    padding: 2rem 0;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-container .about-img {
+    width: 100%;
+    height: 50%;
+    padding: 0 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-container p {
+    width: 100%;
+    padding: 0 1rem;
+    line-height: 1.25;
+  }
+
+  /*! ############ RESPONSIVE SKILLS SECTION ############ !*/
+
+  .skills {
+    padding: 2rem 0;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+
+  .skill-card {
+    width: 20rem;
+    height: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  /*! ############ RESPONSIVE PROJECT SECTION ############ !*/
+
+  .projects {
+    padding: 2rem 0;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    /* padding: 1.5rem 1rem; */
+  }
+
+  .project-card {
+    width: 20rem;
+    height: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  /*! ############ RESPONSIVE RESUME SECTION ############ !*/
+
+  .resume {
+    padding: 1rem 0 3rem 0;
+  }
+
+  .resume h2 {
+    font-size: 2rem;
+  }
+
+  .resume a {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+  }
+
+  /*! ############ RESPONSIVE CONTACT SECTION ############ !*/
+
+  .contact {
+    padding: 2rem 0;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .button {
+    width: 25%;
+  }
+
+  /*! ############ RESPONSIVE FOOTER SECTION ############ !*/
+
+  .footer-intro {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+
+  .socials {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .icons a {
+    margin-right: 0.5rem;
+  }
+
+  .icons a:last-child {
+    margin-right: 0;
+  }
+
+  .copyright {
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
 }
