@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  /* --accent: hsl(204, 70%, 53%);
+   */
+  --accent-color: #007bff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --button-text-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Raleway", sans-serif;
+}
+
+/*! ############ STYLING HEADER ############ !*/
+
+header {
+  height: 20vh;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.75rem;
+  padding: 0 5rem;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  list-style-type: none;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 0 1.25rem;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+nav ul li:last-child a {
+  padding-right: 0;
+}
+
+/*! ############ STYLING INTRODUCTION SECTION ############ !*/
+
+.introduction {
+  /* border: 2px solid blue; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction h1 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.introduction p {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  max-width: 65ch;
+}
+
+.introduction button {
+  padding: 1.25rem 2.25rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.introduction button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.introduction button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*! ############ STYLING ABOUT SECTION ############ !*/
+
+.about {
+  /* border: 2px solid green; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem;
+}
+
+.about-container .about-img {
+  /* border: 2px solid blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container .about-img img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.about-container p {
+  /* border: 2px solid yellow; */
+  width: 50%;
+  text-align: justify;
+  padding-right: 4rem;
+  line-height: 1.5;
+}
+
+/*! ############ STYLING SKILLS SECTION ############ !*/
+
+.skills {
+  /* border: 2px solid yellow; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.skill-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.skill-card {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  border-radius: 10px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+}
+
+.skill-card ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-card ul li box-icon {
+  margin-right: 0.5rem;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+/*! ############ STYLING PROJECTS SECTION ############ !*/
+
+.projects {
+  /* border: 2px solid blue; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.projects-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  height: 70%;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.project-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+}
+
+.card-buttons button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.card-buttons button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.card-buttons button a {
+  text-decoration: none;
+  color: var(--button-text-color);
+  text-transform: uppercase;
+}
+
+/*! ############ STYLING RESUME SECTION ############ !*/
+
+.resume {
+  /* border: 2px solid green; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.resume h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.resume a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.resume a:hover {
+  background-color: var(--black);
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/*! ############ STYLING CONTACT SECTION ############ !*/
+
+.contact {
+  /* border: 2px solid purple; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  width: 80%;
+  height: 100%;
+  padding: 0 8rem;
+  background: rgba(236, 233, 233, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 50%;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.button {
+  width: 15%;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  /* font-size: 1.2rem; */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/*! ############ STYLING FOOTER ############ !*/
+
+footer {
+  margin-top: 2rem;
+  border-top: 0.5px solid #333;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-intro {
+  /* border: 2px solid blue; */
+  width: 85%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-intro p {
+  margin-top: 0.5rem;
+  max-width: 50ch;
+  text-align: justify;
+}
+
+.socials {
+  /* border: 2px solid green; */
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 0.5rem;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+p,
+h3 {
+  color: #333;
+}
